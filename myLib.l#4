@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -181,6 +181,53 @@ Source: http://www.rohm.com/products/databook/motor/pdf/bd623x_series-e.pdf</des
 <smd name="P$1" x="1" y="-6.1" dx="5.5" dy="3.85" layer="1" rot="R90"/>
 <smd name="P$2" x="11.5" y="-6.1" dx="5.5" dy="3.85" layer="1" rot="R90"/>
 </package>
+<package name="SOD-123">
+<smd name="P$1" x="-3.5" y="0.2" dx="1" dy="1" layer="1"/>
+<smd name="P$2" x="0.2" y="0.2" dx="1" dy="1" layer="1"/>
+<wire x1="-3" y1="1" x2="-0.3" y2="1" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="1" x2="-0.3" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.6" x2="-3" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-3" y1="-0.6" x2="-3" y2="1" width="0.127" layer="51"/>
+<rectangle x1="-3.5" y1="-0.1" x2="-3" y2="0.5" layer="21"/>
+<rectangle x1="-0.3" y1="-0.1" x2="0.2" y2="0.5" layer="21"/>
+<wire x1="-0.7" y1="1" x2="-0.7" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-3" y1="1" x2="-0.3" y2="1" width="0.127" layer="21"/>
+<wire x1="-3" y1="-0.6" x2="-0.3" y2="-0.6" width="0.127" layer="21"/>
+</package>
+<package name="NRS4018">
+<wire x1="0" y1="0" x2="0" y2="-4" width="0.127" layer="52"/>
+<wire x1="0" y1="-4" x2="4" y2="-4" width="0.127" layer="52"/>
+<wire x1="0" y1="0" x2="4" y2="0" width="0.127" layer="52"/>
+<wire x1="4" y1="0" x2="4" y2="-4" width="0.127" layer="52"/>
+<smd name="P$1" x="2" y="-0.5" dx="1.6" dy="3.85" layer="1" rot="R90"/>
+<smd name="P$2" x="2" y="-3.5" dx="1.6" dy="3.85" layer="1" rot="R90"/>
+<wire x1="0" y1="0" x2="0" y2="-4" width="0.127" layer="21"/>
+<wire x1="4" y1="0" x2="4" y2="-4" width="0.127" layer="21"/>
+</package>
+<package name="NRH3012">
+<wire x1="0" y1="0" x2="0" y2="-3" width="0.127" layer="51"/>
+<wire x1="0" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="3" y2="0" width="0.127" layer="51"/>
+<wire x1="3" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<smd name="P$1" x="2.9" y="-1.5" dx="1" dy="2.7" layer="1"/>
+<smd name="P$2" x="0.1" y="-1.5" dx="1" dy="2.7" layer="1"/>
+</package>
+<package name="0612">
+<wire x1="0" y1="0" x2="0" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.6" x2="3.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-1.6" x2="3.2" y2="0" width="0.127" layer="21"/>
+<wire x1="3.2" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="P$1" x="1.6" y="0" dx="0.8" dy="3.2" layer="1" rot="R90"/>
+<smd name="P$2" x="1.6" y="-1.6" dx="0.8" dy="3.2" layer="1" rot="R90"/>
+</package>
+<package name="SRR6038">
+<wire x1="0" y1="0" x2="0" y2="-6.8" width="0.127" layer="21"/>
+<wire x1="0" y1="-6.8" x2="6.8" y2="-6.8" width="0.127" layer="21"/>
+<wire x1="6.8" y1="-6.8" x2="6.8" y2="0" width="0.127" layer="21"/>
+<wire x1="6.8" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="P$1" x="3.3" y="-0.6" dx="3.3" dy="7.3" layer="1" rot="R90"/>
+<smd name="P$2" x="3.3" y="-6.2" dx="3.3" dy="7.3" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LM3405">
@@ -239,6 +286,8 @@ Source: http://www.rohm.com/products/databook/motor/pdf/bd623x_series-e.pdf</des
 <pin name="VSS1" x="15.24" y="5.08" length="middle" rot="R180"/>
 <pin name="SW2" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="SW1" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<text x="-5.08" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-15.24" size="1.778" layer="96">VALUE</text>
 </symbol>
 <symbol name="C-EU">
 <wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
@@ -388,6 +437,90 @@ Source: http://www.rohm.com/products/databook/motor/pdf/bd623x_series-e.pdf</des
 </gates>
 <devices>
 <device name="" package="DR125">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IN4148">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRS4018T4R7MDGJ">
+<description>Taiyo Yuden FIXED IND 4.7UH 1.7A 84 MOHM SMD</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="NRS4018">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRH3012T2R2MN">
+<description>Taiyo Yuden FIXED IND 2.2UH 1.37A 90 MOHM SMD</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="NRH3012">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="W3A4YC103KAT2A">
+<description>0.01uF X7R Capacitor</description>
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="0612">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRR6038-7R4Y">
+<description>Bourns Inc.  	FIXED IND 7.4UH 2.3A 31 MOHM SMD</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SRR6038">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
